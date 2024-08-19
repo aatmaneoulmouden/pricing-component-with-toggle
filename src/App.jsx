@@ -1,5 +1,7 @@
+import Pricing from "./components/Pricing";
+
 const App = () => {
-  return <div>Pricing component with toggle</div>;
+  return <Pricing />;
 };
 
 export default App;
