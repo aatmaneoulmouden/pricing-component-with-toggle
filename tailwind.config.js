@@ -30,6 +30,9 @@ export default {
           'grayish-blue': 'hsl(233, 13%, 49%)',
           'dark-grayish-blue': 'hsl(232, 13%, 33%)',
         },
+      },
+      boxShadow: {
+        "base": "rgba(149, 157, 165, 0.1) 0px 8px 24px;"
       }
     },
   },

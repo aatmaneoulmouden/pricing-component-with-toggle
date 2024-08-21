@@ -10,6 +10,7 @@ export default [
             "2 Users Allowed",
             "Send up to 3 BG"
         ],
+        isRecommended: false,
     },
     {
         name: "Professional",
@@ -22,6 +23,7 @@ export default [
             "5 Users Allowed",
             "Send up to 10 BG"
         ],
+        isRecommended: true,
     },
     {
         name: "Master",
@@ -34,5 +36,6 @@ export default [
             "10 Users Allowed",
             "Send up to 20 BG"
         ],
+        isRecommended: false,
     },
 ]

@@ -14,4 +14,12 @@
     .pricing-type {
         @apply font-semibold text-neutral-light-grayish-blue;
     }
+
+    .features li {
+        @apply py-3 border-t border-neutral-light-grayish-blue/25 font-semibold text-neutral-grayish-blue;
+    }
+
+    .features li:last-child {
+        @apply border-b;
+    }
 }

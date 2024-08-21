@@ -1,6 +1,7 @@
 import topBackground from "../assets/bg-top.svg";
 import bottomBackground from "../assets/bg-bottom.svg";
 import { useState } from "react";
+import Package from "./Package";
 
 const Pricing = () => {
   const [pricingType, setPricingType] = useState("annually");
@@ -44,6 +45,9 @@ const Pricing = () => {
               ></div>
             </button>
             <button className="pricing-type">Monthly</button>
+          </div>
+          <div className="packages-wrapper grid grid-cols-3">
+            <Package />
           </div>
         </div>
       </div>
