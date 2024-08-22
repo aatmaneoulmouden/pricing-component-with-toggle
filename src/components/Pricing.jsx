@@ -2,6 +2,7 @@ import topBackground from "../assets/bg-top.svg";
 import bottomBackground from "../assets/bg-bottom.svg";
 import { useState } from "react";
 import Package from "./Package";
+import packages from "../data/packages";
 
 const Pricing = () => {
   const [pricingType, setPricingType] = useState("annually");
@@ -12,8 +13,12 @@ const Pricing = () => {
     });
   }
 
+  const dispalyPackages = packages.map((packageData, index) => (
+    <Package key={index} pricingType={pricingType} {...packageData} />
+  ));
+
   return (
-    <section className="w-full min-h-screen bg-neutral-very-light-grayish-blue relative flex justify-center items-center">
+    <section className="w-full min-h-screen bg-neutral-very-light-grayish-blue relative">
       <img
         src={topBackground}
         alt="Top Background"
@@ -26,13 +31,13 @@ const Pricing = () => {
       />
 
       <div className="container max-w-full">
-        <div>
+        <div className="w-full min-h-screen flex flex-col justify-center items-center">
           <div className="heading">
-            <h1 className="text-center text-3xl font-bold text-neutral-grayish-blue mb-7">
+            <h1 className="text-center text-3xl font-bold text-neutral-grayish-blue">
               Our Pricing
             </h1>
           </div>
-          <div className="switcher flex justify-center items-center gap-4">
+          <div className="switcher flex justify-center items-center gap-4 mt-7 mb-14">
             <button className="pricing-type">Annually</button>
             <button
               className="w-10 h-6 rounded-full bg-gradient-to-r from-primary-light-purple to-primary-dark-purple relative"
@@ -46,8 +51,8 @@ const Pricing = () => {
             </button>
             <button className="pricing-type">Monthly</button>
           </div>
-          <div className="packages-wrapper grid grid-cols-3">
-            <Package />
+          <div className="packages-wrapper grid grid-cols-3 gap-3">
+            {dispalyPackages}
           </div>
         </div>
       </div>
