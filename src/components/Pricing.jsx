@@ -37,7 +37,7 @@ const Pricing = () => {
               Our Pricing
             </h1>
           </div>
-          <div className="switcher flex justify-center items-center gap-4 mt-7 mb-14">
+          <div className="switcher flex justify-center items-center gap-4 mt-7 mb-10">
             <button className="pricing-type">Annually</button>
             <button
               className="w-10 h-6 rounded-full bg-gradient-to-r from-primary-light-purple to-primary-dark-purple relative"
@@ -51,7 +51,7 @@ const Pricing = () => {
             </button>
             <button className="pricing-type">Monthly</button>
           </div>
-          <div className="packages-wrapper grid grid-cols-3 gap-3">
+          <div className="packages-wrapper flex items-center">
             {dispalyPackages}
           </div>
         </div>
