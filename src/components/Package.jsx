@@ -36,10 +36,10 @@ const Package = ({ name, pricing, features, isRecommended, pricingType }) => {
       </h3>
       <ul className="features w-full">{dispalyFeatures}</ul>
       <button
-        className={`w-full p-4 rounded-lg text-lg font-semibold uppercase tracking-[2px] ${
+        className={`w-full p-4 rounded-lg font-semibold uppercase tracking-[2px] border-2 border-white transition delay-75 ease-linear ${
           isRecommended
-            ? "bg-white text-primary-dark-purple"
-            : "text-white bg-gradient-to-r from-primary-light-purple to-primary-dark-purple"
+            ? "bg-white text-primary-dark-purple hover:text-white hover:bg-primary-dark-purple"
+            : "text-white bg-gradient-to-r from-primary-light-purple to-primary-dark-purple hover:text-primary-dark-purple hover:from-white hover:to-white hover:border-primary-dark-purple"
         }`}
       >
         Learn More
