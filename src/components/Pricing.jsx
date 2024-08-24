@@ -51,7 +51,7 @@ const Pricing = () => {
             </button>
             <button className="pricing-type">Monthly</button>
           </div>
-          <div className="packages-wrapper flex items-center">
+          <div className="packages-wrapper grid grid-cols-1 gap-y-10 desktop:gap-y-0 desktop:grid-cols-3 items-center">
             {dispalyPackages}
           </div>
         </div>

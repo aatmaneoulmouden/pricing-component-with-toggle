@@ -13,7 +13,7 @@ const Package = ({ name, pricing, features, isRecommended, pricingType }) => {
   ));
   return (
     <article
-      className={`package z-10 p-8 rounded-xl shadow-base text-center flex-1 flex flex-col justify-center items-center gap-9 w-96 ${
+      className={`package z-10 p-8 rounded-xl shadow-base text-center flex flex-col justify-center items-center gap-9 w-96 ${
         isRecommended
           ? "bg-gradient-to-br from-primary-light-purple to-primary-dark-purple py-14 z-20"
           : "bg-white"
