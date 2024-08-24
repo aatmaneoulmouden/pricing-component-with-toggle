@@ -37,7 +37,7 @@ const Pricing = () => {
               Our Pricing
             </h1>
           </div>
-          <div className="switcher flex justify-center items-center gap-4 mt-7 mb-10">
+          <div className="switcher flex justify-center items-center gap-4 mt-7 mb-10 transition delay-75 ease-linear hover:opacity-70">
             <button className="pricing-type">Annually</button>
             <button
               className="w-10 h-6 rounded-full bg-gradient-to-r from-primary-light-purple to-primary-dark-purple relative"
